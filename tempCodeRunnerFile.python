@@ -1,0 +1,19 @@
+a, b = map(int, input().split())
+
+ans = False
+
+for i in range(a,b+1):
+    num = i
+    flg = True
+    while num > 0:
+        div = num % 10
+        if div != 7 and div != 4:
+            flg = False
+            break
+        num //= 10
+    if flg == True:
+        ans = True
+        print(i,end=" ")
+
+if ans == False:
+    print(-1)
