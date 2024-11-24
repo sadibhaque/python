@@ -14,6 +14,6 @@ def famous(first, last, **extra):
     print(extra)
     return name
 
-full_name = famous('Jhon', 'Mendax', k = 'CEO')     # k is a key 
+full_name = famous('Sadib', 'Sahib', k = 'CEO')     # k is a key 
 
 print(full_name)
